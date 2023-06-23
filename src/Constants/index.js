@@ -32,7 +32,7 @@ import {
     rick_and_morty,
     ahorcado,
     tic_tac_toe,
-} from "../assets";
+} from "../Assets";
 
 export const navLinks = [
     {
