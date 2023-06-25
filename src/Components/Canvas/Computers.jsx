@@ -21,7 +21,7 @@ const Computers = ({ isMobile }) => {
             />
             <primitive
                 object={computer.scene}
-                scale={isMobile ? 0.7 : 0.75}
+                scale={isMobile ? 1.25 : 1.5}
                 position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
                 rotation={[-0.01, -0.2, -0.1]}
             />
@@ -54,6 +54,11 @@ export const ComputersCanvas = () => {
             shadows
             camera={{ position: [20, 3, 5], fov: 25 }}
             gl={{ preserveDrawingBuffer: true }}
+            style={
+                isMobile
+                    ? { height: "35%", top: "50%" }
+                    : { height: "50%", top: "40%" }
+            }
         >
             <Suspense fallback={<Loader />}>
                 <OrbitControls

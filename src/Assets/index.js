@@ -27,13 +27,14 @@ import apollo from "./tech/apollo.png";
 import socket_io from "./tech/socket.io.png";
 import linux from "./tech/linux.png";
 import azure from "./tech/azure.png";
+import github_svg from "./tech/github.svg";
+import github_actions from "./tech/github_actions.png";
 
 import ecopetrol from "./company/ecopetrol.png";
 import freelance from "./company/freelance.png";
 
 import cars_page from "./projects/cars_page.png";
 import devlog from "./projects/devlog.jpeg";
-import mern_context_crud from "./projects/mern_context_crud.png";
 import chat_javascript from "./projects/chat_javascript.png";
 import organizer from "./projects/organizer.png";
 import rick_and_morty from "./projects/rick_and_morty.png";
@@ -69,11 +70,12 @@ export {
     socket_io,
     linux,
     azure,
+    github_svg,
+    github_actions,
     ecopetrol,
     freelance,
     devlog,
     cars_page,
-    mern_context_crud,
     chat_javascript,
     organizer,
     rick_and_morty,

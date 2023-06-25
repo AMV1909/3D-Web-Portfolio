@@ -14,6 +14,8 @@ import {
     nodejs,
     mongodb,
     git,
+    github_svg,
+    github_actions,
     figma,
     docker,
     express,
@@ -25,7 +27,6 @@ import {
     ecopetrol,
     freelance,
     cars_page,
-    mern_context_crud,
     devlog,
     chat_javascript,
     organizer,
@@ -38,6 +39,10 @@ export const navLinks = [
     {
         id: "about",
         title: "About",
+    },
+    {
+        id: "technologies",
+        title: "Technologies",
     },
     {
         id: "work",
@@ -125,6 +130,16 @@ export const technologies = [
         link: "https://git-scm.com",
     },
     {
+        name: "GitHub",
+        icon: github_svg,
+        link: "https://github.com",
+    },
+    {
+        name: "GitHub Actions",
+        icon: github_actions,
+        link: "https://github.com/features/actions",
+    },
+    {
         name: "Figma",
         icon: figma,
         link: "https://www.figma.com",
@@ -197,9 +212,9 @@ export const experiences = [
 
 export const projects = [
     {
-        name: "Tic Tac Toe Multiplayer",
+        name: "DevLog",
         description:
-            "This is a multiplayer Tic Tac Toe game developed with React.js, Node.js, Express.js and Socket.io. This project use socket.io for the real time game and MongoDB for the database.",
+            "A complete web store developed with the Stack MERN. This project use Stripe for payments, Cloudinary for images and Azure IoT for the location of the drones that deliver the products.",
         tags: [
             {
                 name: "react",
@@ -214,101 +229,16 @@ export const projects = [
                 color: "pink-text-gradient",
             },
             {
-                name: "socket.io",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: tic_tac_toe,
-        source_code_link: "https://github.com/AMV1909/Tic-Tac-Toe-Frontend",
-        deployed_url: "https://tic-tac-toe-ctm.pages.dev",
-    },
-    {
-        name: "Hangman Multiplayer",
-        description:
-            "This is a multiplayer Hangman game developed with React.js, Node.js, Express.js and Socket.io. This project use socket.io for the real time game and MongoDB for the database.",
-        tags: [
-            {
-                name: "react",
+                name: "stripe",
                 color: "blue-text-gradient",
             },
             {
-                name: "express",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "socket.io",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: ahorcado,
-        source_code_link: "https://github.com/AMV1909/Ahorcado-Lite-Frontend",
-        deployed_url: "https://ahorcado.pages.dev",
-    },
-    {
-        name: "Rick and Morty",
-        description:
-            "This is practice project consuming the Rick and Morty API. This project was developed with React.js and styled with Tailwind CSS.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "tailwind",
+                name: "azure",
                 color: "green-text-gradient",
             },
         ],
-        image: rick_and_morty,
-        source_code_link:
-            "https://github.com/AMV1909/Rick-And-Morty-TypeScript",
-        deployed_url: "https://amv1909.github.io/Rick-And-Morty-TypeScript/",
-    },
-    {
-        name: "Cars Page",
-        description:
-            "This is a Cars Page developed with Express.js and ejs template with Nodej.js. This project is a CRUD of cars, where you can create, read, update and delete cars.",
-        tags: [
-            {
-                name: "express",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "ejs",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: cars_page,
-        source_code_link: "https://github.com/AMV1909/Cars-Page",
-        deployed_url: "https://amv1909.github.io/Desing-Cars-Page/index.html",
-    },
-    {
-        name: "Chat App",
-        description:
-            "A complete chat application developed with socket.io, Node.js, Express.js and MongoDB. This project use socket.io for the real time chat and MongoDB for the database.",
-        tags: [
-            {
-                name: "socket.io",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "express",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: chat_javascript,
-        source_code_link: "https://github.com/AMV1909/Chat-JavaScript",
+        image: devlog,
+        source_code_link: "https://github.com/AMV1909/DevLog_frontend",
     },
     {
         name: "Organizer",
@@ -340,12 +270,12 @@ export const projects = [
         source_code_link: "https://github.com/AMV1909/MERN-Apollo",
     },
     {
-        name: "DevLog",
+        name: "Chat App",
         description:
-            "A complete web store developed with the Stack MERN. This project use Stripe for payments, Cloudinary for images and Azure IoT for the location of the drones that deliver the products.",
+            "A complete chat application developed with socket.io, Node.js, Express.js and MongoDB. This project use socket.io for the real time chat and MongoDB for the database.",
         tags: [
             {
-                name: "react",
+                name: "socket.io",
                 color: "blue-text-gradient",
             },
             {
@@ -356,22 +286,36 @@ export const projects = [
                 name: "mongodb",
                 color: "pink-text-gradient",
             },
-            {
-                name: "stripe",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "azure",
-                color: "green-text-gradient",
-            },
         ],
-        image: devlog,
-        source_code_link: "https://github.com/AMV1909/DevLog_frontend",
+        image: chat_javascript,
+        source_code_link: "https://github.com/AMV1909/Chat-JavaScript",
     },
     {
-        name: "Posts Application",
+        name: "Cars Page",
         description:
-            "Web application developed with React.js, Node.js, Express.js and MongoDB. This project is a CRUD of posts, where you can create, read, update and delete posts with images using cloudinary.",
+            "This is a Cars Page developed with Express.js and ejs template with Nodej.js. This project is a CRUD of cars, where you can create, read, update and delete cars.",
+        tags: [
+            {
+                name: "express",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "ejs",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: cars_page,
+        source_code_link: "https://github.com/AMV1909/Cars-Page",
+        deployed_url: "https://amv1909.github.io/Desing-Cars-Page/index.html",
+    },
+    {
+        name: "Tic Tac Toe Multiplayer",
+        description:
+            "Tic Tac Toe game developed with React.js, Node.js, Express.js and Socket.io. This project use socket.io for the real time game and MongoDB for the database.",
         tags: [
             {
                 name: "react",
@@ -385,8 +329,39 @@ export const projects = [
                 name: "mongodb",
                 color: "pink-text-gradient",
             },
+            {
+                name: "socket.io",
+                color: "blue-text-gradient",
+            },
         ],
-        image: mern_context_crud,
-        source_code_link: "https://github.com/AMV1909/MERN-Context-CRUD",
+        image: tic_tac_toe,
+        source_code_link: "https://github.com/AMV1909/Tic-Tac-Toe-Frontend",
+        deployed_url: "https://tic-tac-toe-ctm.pages.dev",
+    },
+    {
+        name: "Hangman Multiplayer",
+        description:
+            "Hangman game developed with React.js, Node.js, Express.js and Socket.io. This project use socket.io for the real time game and MongoDB for the database.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "socket.io",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: ahorcado,
+        source_code_link: "https://github.com/AMV1909/Ahorcado-Lite-Frontend",
+        deployed_url: "https://ahorcado.pages.dev",
     },
 ];

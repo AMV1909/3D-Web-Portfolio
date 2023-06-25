@@ -36,4 +36,4 @@ export const Tech = SectionWrapper(function Tech() {
             </div>
         </>
     );
-}, "");
+}, "technologies");

@@ -127,6 +127,7 @@ export const Contact = SectionWrapper(function Contact() {
                 variants={slideIn("right", "tween", 0.2, 1)}
                 className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
             >
+                <div className="absolute z-10 h-[350px] w-full"></div>
                 <EarthCanvas />
             </motion.div>
         </div>

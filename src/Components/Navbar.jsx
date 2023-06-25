@@ -62,7 +62,7 @@ export function Navbar() {
                     <div
                         className={`${
                             toggle ? "flex" : "hidden"
-                        } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+                        } p-6 bg-black border-white border-2 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
                     >
                         <ul className="list-none flex justify-end items-start flex-col gap-4">
                             {navLinks.map((link) => (
@@ -70,7 +70,7 @@ export function Navbar() {
                                     key={link.id}
                                     className={`${
                                         active === link.title
-                                            ? "text-white"
+                                            ? "text-white font-extrabold"
                                             : "text-secondary"
                                     } font-poppins font-medium cursor-pointer text-[16px]`}
                                     onClick={() => {
