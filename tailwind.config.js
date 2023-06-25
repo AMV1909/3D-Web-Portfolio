@@ -16,7 +16,6 @@ export default {
                 card: "0px 35px 120px -15px #211e35",
             },
             screens: {
-                xxs: "400px",
                 xs: "450px",
             },
             backgroundImage: {

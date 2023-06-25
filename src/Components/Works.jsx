@@ -6,6 +6,7 @@ import { github, url } from "../Assets";
 import { SectionWrapper } from "../Hoc";
 import { projects } from "../Constants";
 import { fadeIn, textVariant } from "../Utils/Motion";
+import { useEffect, useState } from "react";
 
 const ProjectCard = ({
     index,
@@ -18,10 +19,10 @@ const ProjectCard = ({
 }) => (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
         <Tilt
-            options={{ max: 45, scale: 1, speed: 450,  }}
+            options={{ max: 45, scale: 1, speed: 450 }}
             className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full h-auto xl:h-[541px]"
         >
-            <div className="relative w-full h-[180px] xxs:h-[230px]">
+            <div className="relative w-full h-[230px]">
                 <img
                     src={image}
                     alt={name}
@@ -60,7 +61,7 @@ const ProjectCard = ({
                 <p className="mt-2 text-secondary text-[14px]">{description}</p>
             </div>
 
-            <div className="hidden mt-4 xxs:flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap gap-2">
                 {tags.map((tag) => (
                     <p key={tag.name} className={`text-[14px] ${tag.color}`}>
                         #{tag.name}
@@ -71,6 +72,24 @@ const ProjectCard = ({
     </motion.div>
 );
 export const Works = SectionWrapper(function Works() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+        setIsMobile(mediaQuery.matches);
+
+        const handleResize = (e) => {
+            setIsMobile(e.matches);
+        };
+
+        mediaQuery.addEventListener("change", handleResize);
+
+        return () => {
+            mediaQuery.removeEventListener("change", handleResize);
+        };
+    }, []);
+
     return (
         <>
             <motion.div variants={textVariant()}>
@@ -93,13 +112,23 @@ export const Works = SectionWrapper(function Works() {
             </div>
 
             <div className="mt-20 flex flex-wrap gap-7">
-                {projects.map((project, index) => (
-                    <ProjectCard
-                        key={`Project-${index}`}
-                        index={index}
-                        {...project}
-                    />
-                ))}
+                {isMobile
+                    ? projects
+                          .slice(0, 3)
+                          .map((project, index) => (
+                              <ProjectCard
+                                  key={project.name}
+                                  index={index}
+                                  {...project}
+                              />
+                          ))
+                    : projects.map((project, index) => (
+                          <ProjectCard
+                              key={project.name}
+                              index={index}
+                              {...project}
+                          />
+                      ))}
             </div>
         </>
     );

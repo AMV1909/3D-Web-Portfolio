@@ -290,4 +290,78 @@ export const projects = [
         image: chat_javascript,
         source_code_link: "https://github.com/AMV1909/Chat-JavaScript",
     },
+    {
+        name: "Cars Page",
+        description:
+            "This is a Cars Page developed with Express.js and ejs template with Nodej.js. This project is a CRUD of cars, where you can create, read, update and delete cars.",
+        tags: [
+            {
+                name: "express",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "ejs",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: cars_page,
+        source_code_link: "https://github.com/AMV1909/Cars-Page",
+        deployed_url: "https://amv1909.github.io/Desing-Cars-Page/index.html",
+    },
+    {
+        name: "Tic Tac Toe Multiplayer",
+        description:
+            "Tic Tac Toe game developed with React.js, Node.js, Express.js and Socket.io. This project use socket.io for the real time game and MongoDB for the database.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "socket.io",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: tic_tac_toe,
+        source_code_link: "https://github.com/AMV1909/Tic-Tac-Toe-Frontend",
+        deployed_url: "https://tic-tac-toe-ctm.pages.dev",
+    },
+    {
+        name: "Hangman Multiplayer",
+        description:
+            "Hangman game developed with React.js, Node.js, Express.js and Socket.io. This project use socket.io for the real time game and MongoDB for the database.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "socket.io",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: ahorcado,
+        source_code_link: "https://github.com/AMV1909/Ahorcado-Lite-Frontend",
+        deployed_url: "https://ahorcado.pages.dev",
+    },
 ];
