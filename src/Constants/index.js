@@ -364,4 +364,19 @@ export const projects = [
         source_code_link: "https://github.com/AMV1909/Ahorcado-Lite-Frontend",
         deployed_url: "https://ahorcado.pages.dev",
     },
+    {
+        name: "Rick and Morty",
+        description:
+            "A web application developed with React.js using the Rick and Morty API. This project use the API to show the characters, locations and episodes of the series.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: rick_and_morty,
+        source_code_link:
+            "https://github.com/AMV1909/Rick-And-Morty-TypeScript",
+        deployed_url: "https://amv1909.github.io/Rick-And-Morty-TypeScript/",
+    },
 ];
