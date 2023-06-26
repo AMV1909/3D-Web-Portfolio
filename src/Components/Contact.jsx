@@ -70,6 +70,7 @@ export const Contact = SectionWrapper(function Contact() {
                             </span>
                         </label>
                         <input
+                            required
                             id="name"
                             type="text"
                             name="name"
@@ -87,6 +88,7 @@ export const Contact = SectionWrapper(function Contact() {
                             </span>
                         </label>
                         <input
+                            required
                             id="email"
                             type="email"
                             name="email"
@@ -104,6 +106,7 @@ export const Contact = SectionWrapper(function Contact() {
                             </span>
                         </label>
                         <textarea
+                            required
                             id="message"
                             rows="7"
                             name="message"
