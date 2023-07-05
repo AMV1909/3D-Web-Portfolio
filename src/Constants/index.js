@@ -232,7 +232,7 @@ export const projects = [
         ],
         image: gpt3_amv,
         source_code_link: "https://github.com/AMV1909/GPT3_AMV",
-        live_demo_link: "https://amv1909.github.io/GPT3_AMV/",
+        deployed_url: "https://amv1909.github.io/GPT3_AMV/",
     },
     {
         name: "DevLog",
