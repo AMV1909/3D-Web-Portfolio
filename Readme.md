@@ -20,6 +20,6 @@ This is a 3D web portfolio that I created to showcase my projects. It is built u
 
 ![3D Web Portfolio](./img/3D%20Web%20Portfolio.png)
 
-## Live Demo
+## Deployment
 
 [3D Web Portfolio](https://axel-amv.pages.dev/)

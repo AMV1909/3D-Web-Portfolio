@@ -33,6 +33,7 @@ import {
     rick_and_morty,
     ahorcado,
     tic_tac_toe,
+    gpt3_amv,
 } from "../Assets";
 
 export const navLinks = [
@@ -212,6 +213,28 @@ export const experiences = [
 
 export const projects = [
     {
+        name: "GPT-3",
+        description:
+            "Modern UI/UX GPT-3 is a website created with the most modern UI/UX design and development techniques. The website is built using React. The website is hosted on GitHub Pages.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "green-text-gradient",
+            },
+            {
+                name: "github pages",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: gpt3_amv,
+        source_code_link: "https://github.com/AMV1909/GPT3_AMV",
+        live_demo_link: "https://amv1909.github.io/GPT3_AMV/",
+    },
+    {
         name: "DevLog",
         description:
             "A complete web store developed with the Stack MERN. This project use Stripe for payments, Cloudinary for images and Azure IoT for the location of the drones that deliver the products.",
@@ -240,35 +263,7 @@ export const projects = [
         image: devlog,
         source_code_link: "https://github.com/AMV1909/DevLog_frontend",
     },
-    {
-        name: "Organizer",
-        description:
-            "A web application developed with React.js, Node.js, Express.js, Apollo-GrapQL and MongoDB. This web application makes easier the organization of your projects and tasks.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "express",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "graphql",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "apollo",
-                color: "green-text-gradient",
-            },
-        ],
-        image: organizer,
-        source_code_link: "https://github.com/AMV1909/MERN-Apollo",
-    },
+
     {
         name: "Chat App",
         description:
@@ -290,28 +285,7 @@ export const projects = [
         image: chat_javascript,
         source_code_link: "https://github.com/AMV1909/Chat-JavaScript",
     },
-    {
-        name: "Cars Page",
-        description:
-            "This is a Cars Page developed with Express.js and ejs template with Nodej.js. This project is a CRUD of cars, where you can create, read, update and delete cars.",
-        tags: [
-            {
-                name: "express",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "ejs",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: cars_page,
-        source_code_link: "https://github.com/AMV1909/Cars-Page",
-        deployed_url: "https://amv1909.github.io/Desing-Cars-Page/index.html",
-    },
+
     {
         name: "Tic Tac Toe Multiplayer",
         description:
@@ -363,6 +337,57 @@ export const projects = [
         image: ahorcado,
         source_code_link: "https://github.com/AMV1909/Ahorcado-Lite-Frontend",
         deployed_url: "https://ahorcado.pages.dev",
+    },
+    {
+        name: "Organizer",
+        description:
+            "A web application developed with React.js, Node.js, Express.js, Apollo-GrapQL and MongoDB. This web application makes easier the organization of your projects and tasks.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "graphql",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "apollo",
+                color: "green-text-gradient",
+            },
+        ],
+        image: organizer,
+        source_code_link: "https://github.com/AMV1909/MERN-Apollo",
+    },
+    {
+        name: "Cars Page",
+        description:
+            "This is a Cars Page developed with Express.js and ejs template with Nodej.js. This project is a CRUD of cars, where you can create, read, update and delete cars.",
+        tags: [
+            {
+                name: "express",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "ejs",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: cars_page,
+        source_code_link: "https://github.com/AMV1909/Cars-Page",
+        deployed_url: "https://amv1909.github.io/Desing-Cars-Page/index.html",
     },
     {
         name: "Rick and Morty",

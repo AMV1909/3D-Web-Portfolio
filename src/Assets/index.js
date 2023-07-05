@@ -40,6 +40,7 @@ import organizer from "./projects/organizer.png";
 import rick_and_morty from "./projects/rick_and_morty.png";
 import tic_tac_toe from "./projects/tic_tac_toe.png";
 import ahorcado from "./projects/ahorcado.png";
+import gpt3_amv from "./projects/gpt3_amv.png";
 
 export {
     logo,
@@ -81,4 +82,5 @@ export {
     rick_and_morty,
     tic_tac_toe,
     ahorcado,
+    gpt3_amv,
 };
