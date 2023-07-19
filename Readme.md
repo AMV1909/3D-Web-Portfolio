@@ -18,7 +18,7 @@ This is a 3D web portfolio that I created to showcase my projects. It is built u
 
 ## Screenshots
 
-![3D Web Portfolio](./img/3D%20Web%20Portfolio.png)
+![3D Web Portfolio](./public/3D%20Web%20Portfolio.png)
 
 ## Deployment
 

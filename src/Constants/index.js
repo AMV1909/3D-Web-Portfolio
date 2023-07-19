@@ -26,7 +26,6 @@ import {
     graphql,
     ecopetrol,
     freelance,
-    cars_page,
     devlog,
     chat_javascript,
     organizer,
@@ -34,6 +33,8 @@ import {
     ahorcado,
     tic_tac_toe,
     gpt3_amv,
+    blind_number_challenge,
+    google_translate_clone,
 } from "../Assets";
 
 export const navLinks = [
@@ -285,7 +286,20 @@ export const projects = [
         image: chat_javascript,
         source_code_link: "https://github.com/AMV1909/Chat-JavaScript",
     },
-
+    {
+        name: "Blind Number Challenge",
+        description:
+            "This is a game where the player has to sort a list of numbers in ascending order. The game has been developed with React.js.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: blind_number_challenge,
+        source_code_link: "https://github.com/AMV1909/Blind-Number-Challenge",
+        deployed_url: "https://amv1909.github.io/Blind-Number-Challenge/",
+    },
     {
         name: "Tic Tac Toe Multiplayer",
         description:
@@ -339,6 +353,28 @@ export const projects = [
         deployed_url: "https://ahorcado.pages.dev",
     },
     {
+        name: "Google Translate Clone",
+        description:
+            "This is a clone of Google Translate. It is a simple web application that allows users to translate text from one language to another. It uses the Opean AI API to translate the text. The application is built with React and styled with Bootstrap.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "green-text-gradient",
+            },
+            {
+                name: "open ai",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: google_translate_clone,
+        source_code_link: "https://github.com/AMV1909/Google-Translate-Clone",
+        deployed_url: "https://amv1909.github.io/Google-Translate-Clone/",
+    },
+    {
         name: "Task Manager",
         description:
             "A web application developed with React.js, Node.js, Express.js, Apollo-GrapQL and MongoDB. This web application makes easier the organization of your projects and tasks.",
@@ -366,28 +402,6 @@ export const projects = [
         ],
         image: organizer,
         source_code_link: "https://github.com/AMV1909/MERN-Apollo",
-    },
-    {
-        name: "Cars Page",
-        description:
-            "This is a Cars Page developed with Express.js and ejs template with Nodej.js. This project is a CRUD of cars, where you can create, read, update and delete cars.",
-        tags: [
-            {
-                name: "express",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "ejs",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: cars_page,
-        source_code_link: "https://github.com/AMV1909/Cars-Page",
-        deployed_url: "https://amv1909.github.io/Desing-Cars-Page/index.html",
     },
     {
         name: "Rick and Morty",

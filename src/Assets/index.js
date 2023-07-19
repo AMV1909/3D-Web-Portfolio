@@ -33,7 +33,6 @@ import github_actions from "./tech/github_actions.png";
 import ecopetrol from "./company/ecopetrol.png";
 import freelance from "./company/freelance.png";
 
-import cars_page from "./projects/cars_page.png";
 import devlog from "./projects/devlog.jpeg";
 import chat_javascript from "./projects/chat_javascript.png";
 import organizer from "./projects/organizer.png";
@@ -41,6 +40,8 @@ import rick_and_morty from "./projects/rick_and_morty.png";
 import tic_tac_toe from "./projects/tic_tac_toe.png";
 import ahorcado from "./projects/ahorcado.png";
 import gpt3_amv from "./projects/gpt3_amv.png";
+import blind_number_challenge from "./projects/blind_number_challenge.png";
+import google_translate_clone from "./projects/google_translate_clone.png";
 
 export {
     logo,
@@ -76,11 +77,12 @@ export {
     ecopetrol,
     freelance,
     devlog,
-    cars_page,
     chat_javascript,
     organizer,
     rick_and_morty,
     tic_tac_toe,
     ahorcado,
     gpt3_amv,
+    blind_number_challenge,
+    google_translate_clone,
 };
