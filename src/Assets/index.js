@@ -40,8 +40,8 @@ import rick_and_morty from "./projects/rick_and_morty.png";
 import tic_tac_toe from "./projects/tic_tac_toe.png";
 import ahorcado from "./projects/ahorcado.png";
 import gpt3_amv from "./projects/gpt3_amv.png";
-import blind_number_challenge from "./projects/blind_number_challenge.png";
-import google_translate_clone from "./projects/google_translate_clone.png";
+import blind_number_challenge from "./projects/blind-number-challenge.png";
+import google_translate_clone from "./projects/google-translate-clone.png";
 
 export {
     logo,
