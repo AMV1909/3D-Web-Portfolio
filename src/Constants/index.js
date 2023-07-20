@@ -355,7 +355,7 @@ export const projects = [
     {
         name: "Google Translate Clone",
         description:
-            "This is a clone of Google Translate. It is a simple web application that allows users to translate text from one language to another. It uses the Opean AI API to translate the text. The application is built with React and styled with Bootstrap.",
+            "This is a clone of Google Translate. It is a simple web application that allows users to translate text from one language to another. It uses the Opean AI API to translate the text.",
         tags: [
             {
                 name: "react",
