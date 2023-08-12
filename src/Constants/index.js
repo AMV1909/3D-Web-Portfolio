@@ -29,12 +29,12 @@ import {
     devlog,
     chat_javascript,
     organizer,
-    rick_and_morty,
     ahorcado,
     tic_tac_toe,
     gpt3_amv,
     blind_number_challenge,
     google_translate_clone,
+    e_commerce_books,
 } from "../Assets";
 
 export const navLinks = [
@@ -236,6 +236,28 @@ export const projects = [
         deployed_url: "https://amv1909.github.io/GPT3_AMV/",
     },
     {
+        name: "E-Commerce Books",
+        description:
+            "This is a repository that contains the source code of a technical test for the position of Freelance Backend Developer at AID FOR AIDS." +
+            " The project is a RESTful API developed with Node.js, Express.js, Zod and MongoDB.",
+        tags: [
+            {
+                name: "nodejs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: e_commerce_books,
+        source_code_link: "https://github.com/AMV1909/e-commerce-books",
+    },
+    {
         name: "DevLog",
         description:
             "A complete web store developed with the Stack MERN. This project use Stripe for payments, Cloudinary for images and Azure IoT for the location of the drones that deliver the products.",
@@ -406,24 +428,5 @@ export const projects = [
         ],
         image: organizer,
         source_code_link: "https://github.com/AMV1909/MERN-Apollo",
-    },
-    {
-        name: "Rick and Morty",
-        description:
-            "A web application developed with React.js using the Rick and Morty API. This project use the API to show the characters, locations and episodes of the series.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "typescript",
-                color: "green-text-gradient",
-            },
-        ],
-        image: rick_and_morty,
-        source_code_link:
-            "https://github.com/AMV1909/Rick-And-Morty-TypeScript",
-        deployed_url: "https://amv1909.github.io/Rick-And-Morty-TypeScript/",
     },
 ];
