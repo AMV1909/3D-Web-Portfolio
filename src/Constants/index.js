@@ -362,12 +362,16 @@ export const projects = [
                 color: "blue-text-gradient",
             },
             {
-                name: "bootstrap",
+                name: "typescript",
                 color: "green-text-gradient",
             },
             {
-                name: "open ai",
+                name: "bootstrap",
                 color: "pink-text-gradient",
+            },
+            {
+                name: "open ai",
+                color: "blue-text-gradient",
             },
         ],
         image: google_translate_clone,
@@ -411,6 +415,10 @@ export const projects = [
             {
                 name: "react",
                 color: "blue-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "green-text-gradient",
             },
         ],
         image: rick_and_morty,
