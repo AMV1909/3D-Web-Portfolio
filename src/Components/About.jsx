@@ -43,14 +43,14 @@ export const About = SectionWrapper(function About() {
                 variants={fadeIn("", "", 0.1, 1)}
                 className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
             >
-                I am a Full Stack developer proficient in front-end and back-end
-                development. With expertise in HTML, CSS, JavaScript, as well as
-                the framework React, I create complete and functional web
-                applications. I also have experience in backend development
-                using technologies such as Express with Node.js, and databases
-                such as MongoDB and MySQL. efficient and high-quality solutions,
-                staying updated on the latest web development trends to meet
-                client and user needs.
+                I am Axel Morales Vesga, a Full Stack developer proficient in
+                front-end and back-end development. With expertise in HTML, CSS,
+                JavaScript, as well as the framework React, I create complete
+                and functional web applications. I also have experience in
+                backend development using technologies such as Express with
+                Node.js, and databases such as MongoDB and MySQL. efficient and
+                high-quality solutions, staying updated on the latest web
+                development trends to meet client and user needs.
             </motion.p>
 
             <div className="mt-20 flex flex-wrap gap-10">
