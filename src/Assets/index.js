@@ -25,10 +25,10 @@ import express from "./tech/express.png";
 import graphql from "./tech/graphql.png";
 import apollo from "./tech/apollo.png";
 import socket_io from "./tech/socket.io.png";
-import linux from "./tech/linux.png";
 import azure from "./tech/azure.png";
 import github_svg from "./tech/github.svg";
 import github_actions from "./tech/github_actions.png";
+import sass from "./tech/sass.svg";
 
 import ecopetrol from "./company/ecopetrol.png";
 import freelance from "./company/freelance.png";
@@ -70,7 +70,6 @@ export {
     graphql,
     apollo,
     socket_io,
-    linux,
     azure,
     github_svg,
     github_actions,
@@ -85,4 +84,5 @@ export {
     blind_number_challenge,
     google_translate_clone,
     e_commerce_books,
+    sass,
 };

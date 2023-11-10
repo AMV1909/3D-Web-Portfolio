@@ -22,7 +22,6 @@ import {
     apollo,
     azure,
     socket_io,
-    linux,
     graphql,
     ecopetrol,
     freelance,
@@ -35,6 +34,7 @@ import {
     blind_number_challenge,
     google_translate_clone,
     e_commerce_books,
+    sass,
 } from "../Assets";
 
 export const navLinks = [
@@ -85,6 +85,11 @@ export const technologies = [
         name: "CSS 3",
         icon: css,
         link: "https://developer.mozilla.org/es/docs/Web/CSS",
+    },
+    {
+        name: "SASS",
+        icon: sass,
+        link: "https://sass-lang.com",
     },
     {
         name: "JavaScript",
@@ -175,12 +180,6 @@ export const technologies = [
         name: "Azure",
         icon: azure,
         link: "https://azure.microsoft.com",
-    },
-
-    {
-        name: "Linux",
-        icon: linux,
-        link: "https://www.linux.org",
     },
 ];
 
