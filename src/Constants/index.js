@@ -215,7 +215,7 @@ export const projects = [
     {
         name: "Plan Padrino - UNAB",
         description:
-            "The application is a web platform that simplifies the access of university students to tutoring. Automate the selection of tutors according to academic profile and teaching quality. Students can set schedules and connect with tutors that fit their academic needs, streamlining the placement process and providing flexibility.",
+            "The web app simplifies the search for tutoring for university students, automatically connecting them with tutors based on their academic profile and availability, streamlining the process and improving access to academic support.",
         tags: [
             {
                 name: "typescript",
