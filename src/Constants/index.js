@@ -27,7 +27,6 @@ import {
     freelance,
     devlog,
     chat_javascript,
-    organizer,
     ahorcado,
     tic_tac_toe,
     gpt3_amv,
@@ -35,6 +34,7 @@ import {
     google_translate_clone,
     e_commerce_books,
     sass,
+    plan_padrino,
 } from "../Assets";
 
 export const navLinks = [
@@ -213,6 +213,40 @@ export const experiences = [
 
 export const projects = [
     {
+        name: "Plan Padrino - UNAB",
+        description:
+            "The application is a web platform that simplifies the access of university students to tutoring. Automate the selection of tutors according to academic profile and teaching quality. Students can set schedules and connect with tutors that fit their academic needs, streamlining the placement process and providing flexibility.",
+        tags: [
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "react",
+                color: "green-text-gradient",
+            },
+            {
+                name: "redux",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "express",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "google api",
+                color: "green-text-gradient",
+            },
+        ],
+        image: plan_padrino,
+        source_code_link: "https://github.com/AMV1909/STGE-Frontend-Axel",
+        deployed_url: "https://plan-padrino.pages.dev",
+    },
+    {
         name: "GPT-3",
         description:
             "Modern UI/UX GPT-3 is a website created with the most modern UI/UX design and development techniques. The website is built using React. The website is hosted on GitHub Pages.",
@@ -308,6 +342,32 @@ export const projects = [
         source_code_link: "https://github.com/AMV1909/Chat-JavaScript",
     },
     {
+        name: "Google Translate Clone",
+        description:
+            "This is a clone of Google Translate. It is a simple web application that allows users to translate text from one language to another. It uses the Opean AI API to translate the text.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "open ai",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: google_translate_clone,
+        source_code_link: "https://github.com/AMV1909/Google-Translate-Clone",
+        deployed_url: "https://amv1909.github.io/Google-Translate-Clone/",
+    },
+    {
         name: "Blind Number Challenge",
         description:
             "This is a game where the player has to sort a list of numbers in ascending order. The game has been developed with React.js.",
@@ -372,60 +432,5 @@ export const projects = [
         image: ahorcado,
         source_code_link: "https://github.com/AMV1909/Ahorcado-Lite-Frontend",
         deployed_url: "https://ahorcado.pages.dev",
-    },
-    {
-        name: "Google Translate Clone",
-        description:
-            "This is a clone of Google Translate. It is a simple web application that allows users to translate text from one language to another. It uses the Opean AI API to translate the text.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "typescript",
-                color: "green-text-gradient",
-            },
-            {
-                name: "bootstrap",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "open ai",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: google_translate_clone,
-        source_code_link: "https://github.com/AMV1909/Google-Translate-Clone",
-        deployed_url: "https://amv1909.github.io/Google-Translate-Clone/",
-    },
-    {
-        name: "Task Manager",
-        description:
-            "A web application developed with React.js, Node.js, Express.js, Apollo-GrapQL and MongoDB. This web application makes easier the organization of your projects and tasks.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "express",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "graphql",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "apollo",
-                color: "green-text-gradient",
-            },
-        ],
-        image: organizer,
-        source_code_link: "https://github.com/AMV1909/MERN-Apollo",
     },
 ];

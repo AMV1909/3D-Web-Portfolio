@@ -35,13 +35,13 @@ import freelance from "./company/freelance.png";
 
 import devlog from "./projects/devlog.jpeg";
 import chat_javascript from "./projects/chat_javascript.png";
-import organizer from "./projects/organizer.png";
 import tic_tac_toe from "./projects/tic_tac_toe.png";
 import ahorcado from "./projects/ahorcado.png";
 import gpt3_amv from "./projects/gpt3_amv.png";
 import blind_number_challenge from "./projects/blind-number-challenge.png";
 import google_translate_clone from "./projects/google-translate-clone.png";
 import e_commerce_books from "./projects/e-commerce-books.jpg";
+import plan_padrino from "./projects/plan_padrino.jpg";
 
 export {
     logo,
@@ -77,7 +77,6 @@ export {
     freelance,
     devlog,
     chat_javascript,
-    organizer,
     tic_tac_toe,
     ahorcado,
     gpt3_amv,
@@ -85,4 +84,5 @@ export {
     google_translate_clone,
     e_commerce_books,
     sass,
+    plan_padrino,
 };
