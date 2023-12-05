@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { toast } from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../Styles";
@@ -22,6 +23,7 @@ export const Contact = SectionWrapper(function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
+
         emailjs
             .send(
                 import.meta.env.VITE_EMAILJS_SERVICE,
@@ -37,7 +39,8 @@ export const Contact = SectionWrapper(function Contact() {
             )
             .then(() => {
                 setLoading(false);
-                alert("Thank you. I will get back to you as soon as possible!");
+                toast.success("Message sent successfully!");
+
                 setForm({
                     name: "",
                     email: "",
@@ -46,7 +49,7 @@ export const Contact = SectionWrapper(function Contact() {
             })
             .catch(() => {
                 setLoading(false);
-                alert("Something went wrong. Please try again later.");
+                toast.error("Something went wrong. Please try again later.");
             });
     };
 
