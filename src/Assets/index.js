@@ -39,9 +39,9 @@ import tic_tac_toe from "./projects/tic_tac_toe.png";
 import ahorcado from "./projects/ahorcado.png";
 import gpt3_amv from "./projects/gpt3_amv.png";
 import blind_number_challenge from "./projects/blind-number-challenge.png";
-import google_translate_clone from "./projects/google-translate-clone.png";
 import e_commerce_books from "./projects/e-commerce-books.jpg";
 import plan_padrino from "./projects/plan_padrino.jpg";
+import promptopia from "./projects/promptopia.png";
 
 export {
     logo,
@@ -81,8 +81,8 @@ export {
     ahorcado,
     gpt3_amv,
     blind_number_challenge,
-    google_translate_clone,
     e_commerce_books,
     sass,
     plan_padrino,
+    promptopia,
 };

@@ -31,10 +31,10 @@ import {
     tic_tac_toe,
     gpt3_amv,
     blind_number_challenge,
-    google_translate_clone,
     e_commerce_books,
     sass,
     plan_padrino,
+    promptopia,
 } from "../Assets";
 
 export const navLinks = [
@@ -247,6 +247,32 @@ export const projects = [
         deployed_url: "https://plan-padrino.pages.dev",
     },
     {
+        name: "Promptopia",
+        description:
+            "Discover & Share AI Prompts. Promptopia is an open-source AI prompting tool for modern world to discoverm create and share creative prompts.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: promptopia,
+        source_code_link: "https://github.com/AMV1909/Promptopia",
+        deployed_url: "https://promptopia-omega-seven.vercel.app",
+    },
+    {
         name: "GPT-3",
         description:
             "Modern UI/UX GPT-3 is a website created with the most modern UI/UX design and development techniques. The website is built using React. The website is hosted on GitHub Pages.",
@@ -319,7 +345,6 @@ export const projects = [
         image: devlog,
         source_code_link: "https://github.com/AMV1909/DevLog_frontend",
     },
-
     {
         name: "Chat App",
         description:
@@ -340,32 +365,6 @@ export const projects = [
         ],
         image: chat_javascript,
         source_code_link: "https://github.com/AMV1909/Chat-JavaScript",
-    },
-    {
-        name: "Google Translate Clone",
-        description:
-            "This is a clone of Google Translate. It is a simple web application that allows users to translate text from one language to another. It uses the Opean AI API to translate the text.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "typescript",
-                color: "green-text-gradient",
-            },
-            {
-                name: "bootstrap",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "open ai",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: google_translate_clone,
-        source_code_link: "https://github.com/AMV1909/Google-Translate-Clone",
-        deployed_url: "https://amv1909.github.io/Google-Translate-Clone/",
     },
     {
         name: "Blind Number Challenge",
