@@ -32,6 +32,7 @@ import sass from "./tech/sass.svg";
 
 import ecopetrol from "./company/ecopetrol.png";
 import freelance from "./company/freelance.png";
+import eficacia from "./company/eficacia.png";
 
 import devlog from "./projects/devlog.jpeg";
 import chat_javascript from "./projects/chat_javascript.png";
@@ -75,6 +76,7 @@ export {
     github_actions,
     ecopetrol,
     freelance,
+    eficacia,
     devlog,
     chat_javascript,
     tic_tac_toe,

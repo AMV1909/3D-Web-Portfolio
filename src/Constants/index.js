@@ -35,6 +35,7 @@ import {
     sass,
     plan_padrino,
     promptopia,
+    eficacia,
 } from "../Assets";
 
 export const navLinks = [
@@ -202,11 +203,23 @@ export const experiences = [
         company_name: "Freelance",
         icon: freelance,
         iconBg: "#E6DEDD",
-        date: "Dec 2022 - Present",
+        date: "Dec 2022 - Nov 2023",
         points: [
             "Developing and deploying web applications using React.js and other related technologies for clients.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Developing and deploying RESTful and GraphQL APIs using Node.js, Express.js, Apollo-Server  and MongoDB.",
+        ],
+    },
+    {
+        title: "University Intern - Support Area",
+        company_name: "Eficacia S.A.",
+        icon: eficacia,
+        iconBg: "#E6DEDD",
+        date: "Dec 2023 - Present",
+        points: [
+            "Bringing technical support to the company's employees.",
+            "Managing the company's technological resources.",
+            "Manage data about users, contracts, companies, and many more.",
         ],
     },
 ];
