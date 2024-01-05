@@ -7,6 +7,7 @@ import {
     typescript,
     html,
     css,
+    nextjs,
     reactjs,
     threejs,
     redux,
