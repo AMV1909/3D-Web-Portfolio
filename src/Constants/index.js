@@ -19,7 +19,6 @@ import {
     figma,
     docker,
     express,
-    apollo,
     azure,
     socket_io,
     graphql,
@@ -103,6 +102,11 @@ export const technologies = [
         link: "https://www.typescriptlang.org",
     },
     {
+        name: "Next JS",
+        icon: nextjs,
+        link: "https://nextjs.org",
+    },
+    {
         name: "React JS",
         icon: reactjs,
         link: "https://es.reactjs.org",
@@ -171,11 +175,6 @@ export const technologies = [
         name: "GraphQL",
         icon: graphql,
         link: "https://graphql.org",
-    },
-    {
-        name: "Apollo Server",
-        icon: apollo,
-        link: "https://www.apollographql.com/docs/apollo-server",
     },
     {
         name: "Azure",
@@ -378,6 +377,7 @@ export const projects = [
         ],
         image: chat_javascript,
         source_code_link: "https://github.com/AMV1909/Chat-JavaScript",
+        deployed_url: "https://chat-javascript-0c4q.onrender.com",
     },
     {
         name: "Blind Number Challenge",
@@ -417,7 +417,6 @@ export const projects = [
         ],
         image: tic_tac_toe,
         source_code_link: "https://github.com/AMV1909/Tic-Tac-Toe-Frontend",
-        deployed_url: "https://tic-tac-toe-ctm.pages.dev",
     },
     {
         name: "Hangman Multiplayer",
