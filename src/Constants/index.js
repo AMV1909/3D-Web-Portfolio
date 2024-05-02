@@ -3,39 +3,32 @@ import {
     backend,
     creator,
     web,
-    javascript,
     typescript,
-    html,
-    css,
     nextjs,
     reactjs,
-    threejs,
     redux,
     tailwind,
     nodejs,
     mongodb,
-    git,
     github_svg,
     github_actions,
-    figma,
-    docker,
     express,
-    azure,
-    socket_io,
-    graphql,
     ecopetrol,
-    freelance,
     devlog,
-    chat_javascript,
-    ahorcado,
-    tic_tac_toe,
-    gpt3_amv,
-    blind_number_challenge,
-    e_commerce_books,
     sass,
     plan_padrino,
-    promptopia,
     eficacia,
+    expo,
+    zustand,
+    electron,
+    postgresql,
+    mysql,
+    bun,
+    apollo,
+    cloude_company,
+    funcadi,
+    playwright,
+    jest,
 } from "../Assets";
 
 export const navLinks = [
@@ -59,16 +52,16 @@ export const navLinks = [
 
 export const services = [
     {
-        title: "Web Developer",
+        title: "Frontend Developer",
         icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
     },
     {
         title: "Backend Developer",
         icon: backend,
+    },
+    {
+        title: "React Native Developer",
+        icon: mobile,
     },
     {
         title: "DevOps Engineer",
@@ -77,31 +70,6 @@ export const services = [
 ];
 
 export const technologies = [
-    {
-        name: "HTML 5",
-        icon: html,
-        link: "https://developer.mozilla.org/es/docs/Web/HTML",
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-        link: "https://developer.mozilla.org/es/docs/Web/CSS",
-    },
-    {
-        name: "SASS",
-        icon: sass,
-        link: "https://sass-lang.com",
-    },
-    {
-        name: "JavaScript",
-        icon: javascript,
-        link: "https://developer.mozilla.org/es/docs/Web/JavaScript",
-    },
-    {
-        name: "TypeScript",
-        icon: typescript,
-        link: "https://www.typescriptlang.org",
-    },
     {
         name: "Next JS",
         icon: nextjs,
@@ -113,9 +81,39 @@ export const technologies = [
         link: "https://es.reactjs.org",
     },
     {
-        name: "Redux Toolkit",
+        name: "Expo React Native",
+        icon: expo,
+        link: "https://expo.dev",
+    },
+    {
+        name: "Electron JS",
+        icon: electron,
+        link: "https://www.electronjs.org",
+    },
+    {
+        name: "Express JS",
+        icon: express,
+        link: "https://expressjs.com",
+    },
+    {
+        name: "TypeScript",
+        icon: typescript,
+        link: "https://www.typescriptlang.org",
+    },
+    {
+        name: "Redux",
         icon: redux,
         link: "https://redux-toolkit.js.org",
+    },
+    {
+        name: "Zustand",
+        icon: zustand,
+        link: "https://zustand-demo.pmnd.rs",
+    },
+    {
+        name: "Apollo GraphQL",
+        icon: apollo,
+        link: "https://www.apollographql.com",
     },
     {
         name: "Tailwind CSS",
@@ -123,9 +121,19 @@ export const technologies = [
         link: "https://tailwindcss.com",
     },
     {
+        name: "Sass",
+        icon: sass,
+        link: "https://sass-lang.com",
+    },
+    {
         name: "Node JS",
         icon: nodejs,
         link: "https://nodejs.org",
+    },
+    {
+        name: "Bun",
+        icon: bun,
+        link: "https://bun.sh",
     },
     {
         name: "MongoDB",
@@ -133,14 +141,24 @@ export const technologies = [
         link: "https://www.mongodb.com",
     },
     {
-        name: "Three JS",
-        icon: threejs,
-        link: "https://threejs.org",
+        name: "PostgreSQL",
+        icon: postgresql,
+        link: "https://www.postgresql.org",
     },
     {
-        name: "Git",
-        icon: git,
-        link: "https://git-scm.com",
+        name: "MySQL",
+        icon: mysql,
+        link: "https://www.mysql.com",
+    },
+    {
+        name: "Playwright",
+        icon: playwright,
+        link: "https://playwright.dev",
+    },
+    {
+        name: "Jest",
+        icon: jest,
+        link: "https://jestjs.io",
     },
     {
         name: "GitHub",
@@ -151,36 +169,6 @@ export const technologies = [
         name: "GitHub Actions",
         icon: github_actions,
         link: "https://github.com/features/actions",
-    },
-    {
-        name: "Figma",
-        icon: figma,
-        link: "https://www.figma.com",
-    },
-    {
-        name: "Docker",
-        icon: docker,
-        link: "https://www.docker.com",
-    },
-    {
-        name: "Express JS",
-        icon: express,
-        link: "https://expressjs.com",
-    },
-    {
-        name: "Socket.io",
-        icon: socket_io,
-        link: "https://socket.io",
-    },
-    {
-        name: "GraphQL",
-        icon: graphql,
-        link: "https://graphql.org",
-    },
-    {
-        name: "Azure",
-        icon: azure,
-        link: "https://azure.microsoft.com",
     },
 ];
 
@@ -200,14 +188,14 @@ export const experiences = [
     },
     {
         title: "Full Stack Developer",
-        company_name: "Freelance",
-        icon: freelance,
+        company_name: "Cloude Company",
+        icon: cloude_company,
         iconBg: "#E6DEDD",
-        date: "Dec 2022 - Nov 2023",
+        date: "Mar 2024 - Apr 2024",
         points: [
-            "Developing and deploying web applications using React.js and other related technologies for clients.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Developing and deploying RESTful and GraphQL APIs using Node.js, Express.js, Apollo-Server  and MongoDB.",
+            "Developing Funcadi, a modern full stack application for manage chemical pharmaceutical patient records, manage appoinments for patients, export data as excel or pdf and many more",
+            "Taking user requirements and transforming them into code",
+            "Establisment a route to deploy the web app to tests and production",
         ],
     },
     {
@@ -215,7 +203,7 @@ export const experiences = [
         company_name: "Eficacia S.A.",
         icon: eficacia,
         iconBg: "#E6DEDD",
-        date: "Dec 2023 - Present",
+        date: "Dec 2023 - Jun 2024",
         points: [
             "Bringing technical support to the company's employees.",
             "Managing the company's technological resources.",
@@ -225,6 +213,34 @@ export const experiences = [
 ];
 
 export const projects = [
+    {
+        name: "Funcadi",
+        description:
+            "Funcadi is a modern full stack application developed with the Stack MERN for manage chemical pharmaceutical patient records, manage appoinments for patients, export data as excel or pdf and many more.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "bun",
+                color: "green-text-gradient",
+            },
+        ],
+        image: funcadi,
+    },
     {
         name: "Plan Padrino - UNAB",
         description:
@@ -259,76 +275,7 @@ export const projects = [
         source_code_link: "https://github.com/AMV1909/STGE-Frontend-Axel",
         deployed_url: "https://plan-padrino.pages.dev",
     },
-    {
-        name: "Promptopia",
-        description:
-            "Discover & Share AI Prompts. Promptopia is an open-source AI prompting tool for modern world to discoverm create and share creative prompts.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "typescript",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: promptopia,
-        source_code_link: "https://github.com/AMV1909/Promptopia",
-        deployed_url: "https://promptopia-omega-seven.vercel.app",
-    },
-    {
-        name: "GPT-3",
-        description:
-            "Modern UI/UX GPT-3 is a website created with the most modern UI/UX design and development techniques. The website is built using React. The website is hosted on GitHub Pages.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "green-text-gradient",
-            },
-            {
-                name: "github pages",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: gpt3_amv,
-        source_code_link: "https://github.com/AMV1909/GPT3_AMV",
-        deployed_url: "https://amv1909.github.io/GPT3_AMV/",
-    },
-    {
-        name: "E-Commerce Books",
-        description:
-            "This is a repository that contains the source code of a technical test for the position of Freelance Backend Developer at AID FOR AIDS." +
-            " The project is a RESTful API developed with Node.js, Express.js, Zod and MongoDB.",
-        tags: [
-            {
-                name: "nodejs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "express",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: e_commerce_books,
-        source_code_link: "https://github.com/AMV1909/e-commerce-books",
-    },
+
     {
         name: "DevLog",
         description:
@@ -357,92 +304,5 @@ export const projects = [
         ],
         image: devlog,
         source_code_link: "https://github.com/AMV1909/DevLog_frontend",
-    },
-    {
-        name: "Chat App",
-        description:
-            "A complete chat application developed with socket.io, Node.js, Express.js and MongoDB. This project use socket.io for the real time chat and MongoDB for the database.",
-        tags: [
-            {
-                name: "socket.io",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "express",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: chat_javascript,
-        source_code_link: "https://github.com/AMV1909/Chat-JavaScript",
-        deployed_url: "https://chat-javascript-0c4q.onrender.com",
-    },
-    {
-        name: "Blind Number Challenge",
-        description:
-            "This is a game where the player has to sort a list of numbers in ascending order. The game has been developed with React.js.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: blind_number_challenge,
-        source_code_link: "https://github.com/AMV1909/Blind-Number-Challenge",
-        deployed_url: "https://amv1909.github.io/Blind-Number-Challenge/",
-    },
-    {
-        name: "Tic Tac Toe Multiplayer",
-        description:
-            "Tic Tac Toe game developed with React.js, Node.js, Express.js and Socket.io. This project use socket.io for the real time game and MongoDB for the database.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "express",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "socket.io",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: tic_tac_toe,
-        source_code_link: "https://github.com/AMV1909/Tic-Tac-Toe-Frontend",
-    },
-    {
-        name: "Hangman Multiplayer",
-        description:
-            "Hangman game developed with React.js, Node.js, Express.js and Socket.io. This project use socket.io for the real time game and MongoDB for the database.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "express",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "socket.io",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: ahorcado,
-        source_code_link: "https://github.com/AMV1909/Ahorcado-Lite-Frontend",
-        deployed_url: "https://ahorcado.pages.dev",
     },
 ];

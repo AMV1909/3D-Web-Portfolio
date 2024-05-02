@@ -17,9 +17,9 @@ export const Tech = SectionWrapper(function Tech() {
                 {technologies.map((tech, index) => (
                     <motion.div
                         key={tech.name}
-                        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+                        variants={fadeIn("right", "spring", 0.375 * index, 0.75)}
                     >
-                        <div className="w-28 h-28 bg-white rounded-xl flex justify-center items-center">
+                        <div className="w-28 h-28 p-1 bg-white rounded-xl flex justify-center items-center">
                             <img
                                 className="cursor-pointer"
                                 src={tech.icon}

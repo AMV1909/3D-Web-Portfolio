@@ -7,6 +7,7 @@ import { styles } from "../Styles";
 import { EarthCanvas } from "./Canvas";
 import { SectionWrapper } from "../Hoc";
 import { slideIn } from "../Utils/Motion";
+import { github_logo, linkedin, mail } from "../Assets";
 
 export const Contact = SectionWrapper(function Contact() {
     const [form, setForm] = useState({
@@ -61,6 +62,35 @@ export const Contact = SectionWrapper(function Contact() {
             >
                 <p className={`${styles.sectionSubText}`}>Get in touch</p>
                 <h3 className={`${styles.heroHeadText}`}>Contact.</h3>
+
+                <div className="flex items-center gap-5 mt-4 ml-2">
+                    <a
+                        href="https://www.linkedin.com/in/axel-morales-vesga-200317239"
+                        title="LinkedIn"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src={linkedin} alt="linkedin" className="h-6 rounded" />
+                    </a>
+
+                    <a
+                        href="mailto:axelmoralesvesga@gmail.com"
+                        title="Email"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src={mail} alt="mail" className="h-6" />
+                    </a>
+
+                    <a
+                        href="https://github.com/AMV1909"
+                        title="GitHub"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src={github_logo} alt="github" className="h-6" />
+                    </a>
+                </div>
 
                 <form
                     onSubmit={handleSubmit}
