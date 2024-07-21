@@ -29,6 +29,7 @@ import {
     funcadi,
     playwright,
     jest,
+    cressco,
 } from "../Assets";
 
 export const navLinks = [
@@ -210,6 +211,18 @@ export const experiences = [
             "Manage data about users, contracts, companies, and many more.",
         ],
     },
+    {
+        title: "Full Stack Developer",
+        company_name: "Cressco",
+        icon: cressco,
+        iconBg: "#E6DEDD",
+        date: "Jul 2024 - Present",
+        points: [
+            "Developing web applications using Next.js and Express.js",
+            "Maintane good practices for software development and maintenability of the code",
+            "Create e2e and unit tests for frontend and backend to secure that all the features works as expected"
+        ]
+    }
 ];
 
 export const projects = [
