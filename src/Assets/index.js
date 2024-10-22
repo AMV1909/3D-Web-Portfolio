@@ -26,8 +26,8 @@ import postgresql from "./tech/postgresql.png";
 import mysql from "./tech/mysql.png";
 import bun from "./tech/bun.png";
 import apollo from "./tech/apollo.svg";
-import playwright from "./tech/playwright.png";
 import jest from "./tech/jest.png";
+import cypress from "./tech/cypress.svg"
 
 import ecopetrol from "./company/ecopetrol.png";
 import eficacia from "./company/eficacia.png";
@@ -79,7 +79,7 @@ export {
     apollo,
     cloude_company,
     funcadi,
-    playwright,
     jest,
-    cressco
+    cressco,
+    cypress
 };

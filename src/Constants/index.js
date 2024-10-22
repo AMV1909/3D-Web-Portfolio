@@ -27,9 +27,9 @@ import {
     apollo,
     cloude_company,
     funcadi,
-    playwright,
     jest,
     cressco,
+    cypress,
 } from "../Assets";
 
 export const navLinks = [
@@ -82,7 +82,7 @@ export const technologies = [
         link: "https://es.reactjs.org",
     },
     {
-        name: "Expo React Native",
+        name: "React Native",
         icon: expo,
         link: "https://expo.dev",
     },
@@ -152,9 +152,9 @@ export const technologies = [
         link: "https://www.mysql.com",
     },
     {
-        name: "Playwright",
-        icon: playwright,
-        link: "https://playwright.dev",
+        name: "Cypress",
+        icon: cypress,
+        link: "https://www.cypress.io/",
     },
     {
         name: "Jest",
@@ -200,15 +200,15 @@ export const experiences = [
         ],
     },
     {
-        title: "University Intern - Support Area",
+        title: "Frontend Developer",
         company_name: "Eficacia S.A.",
         icon: eficacia,
         iconBg: "#E6DEDD",
         date: "Dec 2023 - Jun 2024",
         points: [
-            "Bringing technical support to the company's employees.",
-            "Managing the company's technological resources.",
-            "Manage data about users, contracts, companies, and many more.",
+            "Resolve bugs and improve code quality and performance",
+            "Create e2e and unit tests for frontend to secure that all the features works as expected",
+            "Implement new features and improve existing ones collaborating with the UX team to improve the web app",
         ],
     },
     {
@@ -220,9 +220,9 @@ export const experiences = [
         points: [
             "Developing web applications using Next.js and Express.js",
             "Maintane good practices for software development and maintenability of the code",
-            "Create e2e and unit tests for frontend and backend to secure that all the features works as expected"
-        ]
-    }
+            "Create e2e and unit tests for frontend and backend to secure that all the features works as expected",
+        ],
+    },
 ];
 
 export const projects = [
