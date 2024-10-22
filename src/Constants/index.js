@@ -30,6 +30,7 @@ import {
     jest,
     cressco,
     cypress,
+    eeeraapee,
 } from "../Assets";
 
 export const navLinks = [
@@ -227,6 +228,34 @@ export const experiences = [
 
 export const projects = [
     {
+        name: "Eeeraapee",
+        description: "Eeeraapee is an innovative business management tool designed to streamline and optimize organizational workflows. The application offers role-based access, user management, detailed product catalogs, and document management capabilities, including quotations, sales orders, and invoices",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "firebase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwindcss",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "zustand",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express",
+                color: "green-text-gradient",
+            }
+        ],
+        image: eeeraapee,
+        deployed_url: "https://eeeraapee.com",
+    },
+    {
         name: "Funcadi",
         description:
             "Funcadi is a modern full stack application developed with the Stack MERN for manage chemical pharmaceutical patient records, manage appoinments for patients, export data as excel or pdf and many more.",
@@ -253,6 +282,7 @@ export const projects = [
             },
         ],
         image: funcadi,
+        deployed_url: "https://qf.funcadi.com.co",
     },
     {
         name: "Plan Padrino - UNAB",
@@ -288,7 +318,6 @@ export const projects = [
         source_code_link: "https://github.com/AMV1909/STGE-Frontend-Axel",
         deployed_url: "https://plan-padrino.pages.dev",
     },
-
     {
         name: "DevLog",
         description:

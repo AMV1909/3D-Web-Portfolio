@@ -1,12 +1,43 @@
+import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
 import { styles } from "../Styles";
-import { github, url } from "../Assets";
+import { fullscreen, github, url } from "../Assets";
 import { SectionWrapper } from "../Hoc";
 import { projects } from "../Constants";
 import { fadeIn, textVariant } from "../Utils/Motion";
-import { useEffect, useState } from "react";
+
+const ImageModal = ({ src, setIsModalOpen }) => {
+    const imageRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (imageRef.current && !imageRef.current.contains(event.target)) {
+                setIsModalOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [imageRef, setIsModalOpen]);
+
+    return (
+        <div
+            className="w-full h-full fixed inset-0 z-50 bg-black/75 flex justify-center items-center"
+        >
+            <img
+                ref={imageRef}
+                src={src}
+                alt="project"
+                className="px-4 sm:px-10 lg:px-0 lg:w-3/4 lg:h-3/4 object-contain"
+            />
+        </div>
+    );
+};
 
 const ProjectCard = ({
     index,
@@ -16,85 +47,95 @@ const ProjectCard = ({
     image,
     source_code_link,
     deployed_url,
-}) => (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-        <Tilt
-            className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full h-full"
-        >
-            <div className="relative w-full h-[230px]">
-                <img
-                    src={image}
-                    alt={name}
-                    className="w-full h-full object-cover rounded-2xl"
-                />
+}) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-                <div className="absolute inset-0 flex gap-2 justify-end m-3 card-img_hover">
-                    {deployed_url && (
-                        <div
-                            onClick={() => window.open(deployed_url, "_blank")}
-                            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                        >
-                            <img
-                                src={url}
-                                alt="url"
-                                className="w-1/2 h-1/2 object-contain"
-                            />
+    return (
+        <>
+            <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+                <Tilt className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full h-full">
+                    <div className="relative w-full h-[230px]">
+                        <img
+                            src={image}
+                            alt={name}
+                            className="w-full h-full object-cover rounded-2xl"
+                        />
+
+                        <div className="absolute inset-0 flex gap-2 justify-end m-3 card-img_hover">
+                            {deployed_url && (
+                                <div
+                                    onClick={() =>
+                                        window.open(deployed_url, "_blank")
+                                    }
+                                    className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                                >
+                                    <img
+                                        src={url}
+                                        alt="url"
+                                        className="w-1/2 h-1/2 object-contain"
+                                    />
+                                </div>
+                            )}
+
+                            {source_code_link && (
+                                <div
+                                    onClick={() =>
+                                        window.open(source_code_link, "_blank")
+                                    }
+                                    className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                                >
+                                    <img
+                                        src={github}
+                                        alt="github"
+                                        className="w-1/2 h-1/2 object-contain"
+                                    />
+                                </div>
+                            )}
+
+                            <div
+                                onClick={() => setIsModalOpen(true)}
+                                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                            >
+                                <img
+                                    src={fullscreen}
+                                    alt="fullscreen"
+                                    className="w-1/2 h-1/2 object-contain"
+                                />
+                            </div>
                         </div>
-                    )}
-                    {source_code_link && (
-                        <div
-                            onClick={() =>
-                                window.open(source_code_link, "_blank")
-                            }
-                            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                        >
-                            <img
-                                src={github}
-                                alt="github"
-                                className="w-1/2 h-1/2 object-contain"
-                            />
-                        </div>
-                    )}
-                </div>
-            </div>
+                    </div>
 
-            <div className="mt-5">
-                <h3 className="text-white font-bold text-[24px]">{name}</h3>
+                    <div className="mt-5">
+                        <h3 className="text-white font-bold text-[24px]">
+                            {name}
+                        </h3>
 
-                <p className="mt-2 text-secondary text-[14px] text-justify">
-                    {description}
-                </p>
-            </div>
+                        <p className="mt-2 text-secondary text-[14px] text-justify">
+                            {description}
+                        </p>
+                    </div>
 
-            <div className="mt-4 flex flex-wrap gap-2">
-                {tags.map((tag) => (
-                    <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-                        #{tag.name}
-                    </p>
-                ))}
-            </div>
-        </Tilt>
-    </motion.div>
-);
+                    <div className="mt-4 flex flex-wrap gap-2">
+                        {tags.map((tag) => (
+                            <p
+                                key={tag.name}
+                                className={`text-[14px] ${tag.color}`}
+                            >
+                                #{tag.name}
+                            </p>
+                        ))}
+                    </div>
+                </Tilt>
+            </motion.div>
+
+            {isModalOpen && (
+                <ImageModal src={image} setIsModalOpen={setIsModalOpen} />
+            )}
+        </>
+    );
+};
+
 export const Works = SectionWrapper(function Works() {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-        setIsMobile(mediaQuery.matches);
-
-        const handleResize = (e) => {
-            setIsMobile(e.matches);
-        };
-
-        mediaQuery.addEventListener("change", handleResize);
-
-        return () => {
-            mediaQuery.removeEventListener("change", handleResize);
-        };
-    }, []);
-
     return (
         <>
             <motion.div variants={textVariant()}>
@@ -117,23 +158,13 @@ export const Works = SectionWrapper(function Works() {
             </div>
 
             <div className="mt-20 flex flex-wrap gap-7">
-                {isMobile
-                    ? projects
-                          .slice(0, 3)
-                          .map((project, index) => (
-                              <ProjectCard
-                                  key={project.name}
-                                  index={index}
-                                  {...project}
-                              />
-                          ))
-                    : projects.map((project, index) => (
-                          <ProjectCard
-                              key={project.name}
-                              index={index}
-                              {...project}
-                          />
-                      ))}
+                {projects.map((project, index) => (
+                    <ProjectCard
+                        key={project.name}
+                        index={index}
+                        {...project}
+                    />
+                ))}
             </div>
         </>
     );

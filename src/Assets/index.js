@@ -7,6 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import url from "./url.png";
+import fullscreen from "./fullscreen.svg";
 
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
@@ -37,6 +38,7 @@ import cressco from "./company/cressco.png";
 import devlog from "./projects/devlog.jpeg";
 import plan_padrino from "./projects/plan_padrino.jpg";
 import funcadi from "./projects/funcadi.png";
+import eeeraapee from "./projects/eeeraapee.png";
 
 import github_logo from "./social_networks/github.png";
 import linkedin from "./social_networks/linkedin.avif";
@@ -81,5 +83,7 @@ export {
     funcadi,
     jest,
     cressco,
-    cypress
+    cypress,
+    eeeraapee,
+    fullscreen
 };

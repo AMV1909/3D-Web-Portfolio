@@ -11,7 +11,7 @@ export function Navbar() {
 
     return (
         <nav
-            className={`${styles.paddingX} w-full items-center py-5 fixed top-0 z-20 bg-primary`}
+            className={`${styles.paddingX} w-full items-center py-5 fixed top-0 z-10 bg-primary`}
         >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
                 <Link
