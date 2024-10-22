@@ -28,7 +28,8 @@ import mysql from "./tech/mysql.png";
 import bun from "./tech/bun.png";
 import apollo from "./tech/apollo.svg";
 import jest from "./tech/jest.png";
-import cypress from "./tech/cypress.svg"
+import cypress from "./tech/cypress.svg";
+import aws from "./tech/aws.png";
 
 import ecopetrol from "./company/ecopetrol.png";
 import eficacia from "./company/eficacia.png";
@@ -85,5 +86,6 @@ export {
     cressco,
     cypress,
     eeeraapee,
-    fullscreen
+    fullscreen,
+    aws
 };

@@ -31,6 +31,7 @@ import {
     cressco,
     cypress,
     eeeraapee,
+    aws,
 } from "../Assets";
 
 export const navLinks = [
@@ -161,6 +162,11 @@ export const technologies = [
         name: "Jest",
         icon: jest,
         link: "https://jestjs.io",
+    },
+    {
+        name: "AWS",
+        icon: aws,
+        link: "https://aws.amazon.com",
     },
     {
         name: "GitHub",
