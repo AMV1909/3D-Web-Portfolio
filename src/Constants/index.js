@@ -322,7 +322,6 @@ export const projects = [
         ],
         image: plan_padrino,
         source_code_link: "https://github.com/AMV1909/STGE-Frontend-Axel",
-        deployed_url: "https://plan-padrino.pages.dev",
     },
     {
         name: "DevLog",
