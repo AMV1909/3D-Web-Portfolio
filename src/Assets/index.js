@@ -35,6 +35,7 @@ import ecopetrol from "./company/ecopetrol.png";
 import eficacia from "./company/eficacia.png";
 import cloude_company from "./company/cloude_company.webp";
 import cressco from "./company/cressco.png";
+import url_shortener from "./projects/url_shortener.png";
 
 import devlog from "./projects/devlog.jpeg";
 import plan_padrino from "./projects/plan_padrino.jpg";
@@ -87,5 +88,6 @@ export {
     cypress,
     eeeraapee,
     fullscreen,
-    aws
+    aws,
+    url_shortener
 };

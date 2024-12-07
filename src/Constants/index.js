@@ -32,6 +32,7 @@ import {
     cypress,
     eeeraapee,
     aws,
+    url_shortener,
 } from "../Assets";
 
 export const navLinks = [
@@ -235,7 +236,8 @@ export const experiences = [
 export const projects = [
     {
         name: "Eeeraapee",
-        description: "Eeeraapee is an innovative business management tool designed to streamline and optimize organizational workflows. The application offers role-based access, user management, detailed product catalogs, and document management capabilities, including quotations, sales orders, and invoices",
+        description:
+            "Eeeraapee is an innovative business management tool designed to streamline and optimize organizational workflows. The application offers role-based access, user management, detailed product catalogs, and document management capabilities, including quotations, sales orders, and invoices",
         tags: [
             {
                 name: "nextjs",
@@ -256,7 +258,7 @@ export const projects = [
             {
                 name: "express",
                 color: "green-text-gradient",
-            }
+            },
         ],
         image: eeeraapee,
         deployed_url: "https://eeeraapee.com",
@@ -351,5 +353,31 @@ export const projects = [
         ],
         image: devlog,
         source_code_link: "https://github.com/AMV1909/DevLog_frontend",
+    },
+    {
+        name: "URL Shortener",
+        description:
+            "URL Shortener is a web app that allows users to shorten long URLs into shorter, more manageable links, making it easier to share and access content online.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: url_shortener,
+        source_code_link: "https://github.com/AMV1909/Short-Frontend",
+        deployed_url: "https://short-blue.vercel.app/",
     },
 ];
