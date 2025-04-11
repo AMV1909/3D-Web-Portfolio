@@ -21,11 +21,15 @@ export const Contact = SectionWrapper(function Contact() {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
+        toast.loading("Sending message...", {
+            duration: Infinity,
+            id: "loading",
+        });
 
-        emailjs
+        await emailjs
             .send(
                 import.meta.env.VITE_EMAILJS_SERVICE,
                 import.meta.env.VITE_EMAILJS_TEMPLATE,
@@ -40,7 +44,9 @@ export const Contact = SectionWrapper(function Contact() {
             )
             .then(() => {
                 setLoading(false);
-                toast.success("Message sent successfully!");
+                toast.success(
+                    "Message sent successfully!. I will get back to you as soon as possible."
+                );
 
                 setForm({
                     name: "",
@@ -51,7 +57,8 @@ export const Contact = SectionWrapper(function Contact() {
             .catch(() => {
                 setLoading(false);
                 toast.error("Something went wrong. Please try again later.");
-            });
+            })
+            .finally(() => toast.dismiss("loading"));
     };
 
     return (
@@ -70,7 +77,11 @@ export const Contact = SectionWrapper(function Contact() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <img src={linkedin} alt="linkedin" className="h-6 rounded" />
+                        <img
+                            src={linkedin}
+                            alt="linkedin"
+                            className="h-6 rounded"
+                        />
                     </a>
 
                     <a
