@@ -45,7 +45,8 @@ export const Contact = SectionWrapper(function Contact() {
             .then(() => {
                 setLoading(false);
                 toast.success(
-                    "Message sent successfully!. I will get back to you as soon as possible."
+                    "Message sent successfully!. I will get back to you as soon as possible.",
+                    { duration: 5000 }
                 );
 
                 setForm({
