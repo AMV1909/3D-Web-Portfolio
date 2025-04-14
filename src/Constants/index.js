@@ -378,6 +378,5 @@ export const projects = [
         ],
         image: url_shortener,
         source_code_link: "https://github.com/AMV1909/Short-Frontend",
-        deployed_url: "https://short-blue.vercel.app/",
     },
 ];
