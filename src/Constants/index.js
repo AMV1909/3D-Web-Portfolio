@@ -33,6 +33,8 @@ import {
     eeeraapee,
     aws,
     url_shortener,
+    drenvioCompany,
+    drenvio,
 } from "../Assets";
 
 export const navLinks = [
@@ -224,11 +226,23 @@ export const experiences = [
         company_name: "Cressco",
         icon: cressco,
         iconBg: "#E6DEDD",
-        date: "Jul 2024 - Present",
+        date: "Jul 2024 - March 2025",
         points: [
             "Developing web applications using Next.js and Express.js",
             "Maintane good practices for software development and maintenability of the code",
             "Create e2e and unit tests for frontend and backend to secure that all the features works as expected",
+        ],
+    },
+    {
+        title: "Full Stack Developer",
+        company_name: "DrEnvio",
+        icon: drenvioCompany,
+        iconBg: "#fff",
+        date: "March 2025 - Present",
+        points: [
+            "Maintain and enhance the DrEnvio.com platform to ensure performance, stability, and scalability.",
+            "Design and develop new features to improve user experience and support business growth.",
+            "Collaborate with cross-functional teams to identify opportunities for technical improvements and implement best practices.",
         ],
     },
 ];
@@ -291,6 +305,31 @@ export const projects = [
         ],
         image: funcadi,
         deployed_url: "https://qf.funcadi.com.co",
+    },
+    {
+        name: "DrEnvio",
+        description:
+            "DrEnvio is a logistics platform connecting users with multiple shipping companies across Colombia, Mexico, and Peru. It provides efficient quote comparison, real-time package tracking, and shipping management through an intuitive interface.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: drenvio,
+        deployed_url: "https://drenvio.com",
     },
     {
         name: "Plan Padrino - UNAB",

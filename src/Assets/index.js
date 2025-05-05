@@ -35,12 +35,14 @@ import ecopetrol from "./company/ecopetrol.png";
 import eficacia from "./company/eficacia.png";
 import cloude_company from "./company/cloude_company.webp";
 import cressco from "./company/cressco.png";
-import url_shortener from "./projects/url_shortener.png";
+import drenvioCompany from "./company/drenvio.jpg";
 
+import url_shortener from "./projects/url_shortener.png";
 import devlog from "./projects/devlog.jpeg";
 import plan_padrino from "./projects/plan_padrino.jpg";
 import funcadi from "./projects/funcadi.png";
 import eeeraapee from "./projects/eeeraapee.png";
+import drenvio from "./projects/drenvio.png";
 
 import github_logo from "./social_networks/github.png";
 import linkedin from "./social_networks/linkedin.avif";
@@ -89,5 +91,7 @@ export {
     eeeraapee,
     fullscreen,
     aws,
-    url_shortener
+    url_shortener,
+    drenvioCompany,
+    drenvio,
 };
