@@ -13,7 +13,6 @@ import {
     github_svg,
     github_actions,
     express,
-    ecopetrol,
     devlog,
     sass,
     plan_padrino,
@@ -35,6 +34,7 @@ import {
     url_shortener,
     drenvioCompany,
     drenvio,
+    loneWolf,
 } from "../Assets";
 
 export const navLinks = [
@@ -185,19 +185,6 @@ export const technologies = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Ecopetrol",
-        icon: ecopetrol,
-        iconBg: "#E6DEDD",
-        date: "Sep 2022 - Nov 2022",
-        points: [
-            "Developing web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
         title: "Full Stack Developer",
         company_name: "Cloude Company",
         icon: cloude_company,
@@ -243,6 +230,18 @@ export const experiences = [
             "Maintain and enhance the DrEnvio.com platform to ensure performance, stability, and scalability.",
             "Design and develop new features to improve user experience and support business growth.",
             "Collaborate with cross-functional teams to identify opportunities for technical improvements and implement best practices.",
+        ],
+    },
+    {
+        title: "Semi Senior Frontend Developer",
+        company_name: "Lone Wolf Technologies",
+        icon: loneWolf,
+        iconBg: "#E6DEDD",
+        date: "June 2025 - Present",
+        points: [
+            "Write clean, performant code for the current app of the company and future web apps.",
+            "Work with development team to implement new features, develop new products, and address bugs.",
+            "Participate in performance tuning, testing, refactoring, usability, and automation; support, maintain, and help document software functionality.",
         ],
     },
 ];

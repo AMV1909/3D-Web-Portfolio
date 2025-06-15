@@ -31,11 +31,11 @@ import jest from "./tech/jest.png";
 import cypress from "./tech/cypress.svg";
 import aws from "./tech/aws.png";
 
-import ecopetrol from "./company/ecopetrol.png";
 import eficacia from "./company/eficacia.png";
 import cloude_company from "./company/cloude_company.webp";
 import cressco from "./company/cressco.png";
 import drenvioCompany from "./company/drenvio.jpg";
+import loneWolf from "./company/lone_wolf.jpeg";
 
 import url_shortener from "./projects/url_shortener.png";
 import devlog from "./projects/devlog.jpeg";
@@ -68,7 +68,6 @@ export {
     nextjs,
     github_svg,
     github_actions,
-    ecopetrol,
     eficacia,
     devlog,
     sass,
@@ -94,4 +93,5 @@ export {
     url_shortener,
     drenvioCompany,
     drenvio,
+    loneWolf,
 };
